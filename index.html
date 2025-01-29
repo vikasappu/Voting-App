@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>voting-app</title>
+  <link rel="stylesheet" href="indexCss.css">
+</head>
+<body>
+<h2> Vote to Select The Captain</h2>
+<div id="candidates">
+  <table class="candidate">
+    <tr class="candidateImages">
+      <td><img src="images/ViratKohli.jpg" alt="c1"></td>
+      <td><img src="images/RohitSharma.jpg" alt="c2"></td>
+      <td><img src="images/JaspritBumrah.jpg" alt="c3"></td>
+    </tr>
+    <tr>
+      <td><button class="vote-button" onclick="vote('ViratKohli')"> To Vote Press 1</button></td>
+      <td><button class="vote-button" onclick="vote('RohitSharma')">To Vote Press 2</button></td>
+      <td><button class="vote-button" onclick="vote('JaspritBumrah')">To Vote Press 3</button></td>
+    </tr>
+  </table>
+</div>
+<button class="submit-button" id="submit-button"> Sumbit</button>
+<div id="result" style="display: none;"></div>
+<div id="vote-message">Vote Done!</div>
+<audio id="vote-sound" src="audio/beep-125033.mp3"></audio>
+
+<script src="indexJavaScript.js"></script>
+</body>
+</html>
